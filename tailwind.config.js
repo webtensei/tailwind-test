@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./index.html'],
+   darkMode:'class',
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows:{
+        'layout':'auto 1fr auto',
+      },
+      fontFamily:{
+        main:['Karla']
+      }
+    },
   },
   plugins: [],
 }
